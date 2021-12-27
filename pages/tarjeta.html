@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeBank - Tarjeta</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a href="../index.html">Inicio</a></li>
+                <li class="header__item"><a href="#">Tarjetas</a></li>
+                <li class="header__item"><a href="./servicios.html">Servicios</a></li>
+                <li class="header__item"><a href="./contacto.html">Contactenos</a></li>
+                <li class="header__item"><a href="./ayuda.html">Ayuda</a></li>
+            </ul>    
+        </nav>
+        <h1 class="header__h1">
+            Bienvenido a FreeBank!
+        </h1>
+    </header>
+    <hr>
+    <main class="main">
+        <section class="main__grilla--tarjetas">
+            <article class="main__article--tarjetas">
+                <h3>
+                    Saca tu tarjeta! ¿Nuestras politicas?:
+                </h3>
+                <p>
+                    La idea es que seas capaz de guardar tus criptomonedas y tokens sin un sistema KYC (Known Your Costumer), esto quiere decir que no importa de que parte del mundo seas! No nos importa ninguno de tus datos ya que no creemos en la centralizacion y mucho menos en la regularizacion. Los unicos datos que te pediremos seran para ponernos en contacto contigo y que podamos brindarte tu tarjeta FreeBank lo mas rapido posible.
+                </p>
+            </article>
+            <hr>
+            <form class="main__form--tarjetas" action="" method="POST">
+                <div>
+                    <label for="nombreCompleto"></label>Nombre Completo:
+                    <input type="text" name="nombreCompleto" id="nombreCompleto" placeholder="ej: Juanito Ramirez" width="10">
+                </div>
+                <div>
+                    <label for="direccion"></label>Direccion:
+                    <input type="text" name="direccion" id="direccion" placeholder="ej: Libertador 2572, Moreno, Buenos Aires">
+                </div>
+                <div>
+                    <label for="email"></label>E-mail:
+                    <input type="email" name="email" id="email" placeholder="ej: ejemplo@direccion.com">
+                </div>
+                <div>
+                    <label for="mobileNumber"></label>Número de teléfono:
+                    <input type="number" name="mobileNumber" id="mobileNumber" placeholder="ej: +5411XXXXXXXX">
+                </div>
+                
+                <div>Genero:
+                    <select name="Genero">
+                        <option value="M">Hombre</option>
+                        <option value="F">Mujer</option>
+                        <option value="O">Otro</option>
+                        <option value="DS">Prefiero no decirlo</option>
+                    </select>
+                </div>
+                <div>
+                    <textarea cols="30" rows="10" placeholder="Comentarios adicionales"></textarea>
+                </div>
+                <div>
+                    <input type="button" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer class="footer">
+        <section class="footer__section">
+            <article>
+                <p>FreeBank no se encuentra regularizada por ninguna entidad, es un proyecto completamente open-source y la wallet es 100% cold y 100% hot! Para mas informacion no te olvides de contactarnos</p>
+            </article>
+        </section>
+        <ul class="footer__list">
+            <a href="../index.html"><li class="footer__item">Inicio</li></a>
+            <a href="#"><li class="footer__item">Tarjetas</li></a>
+            <a href="./servicios.html"><li class="footer__item">Servicios</li></a>
+            <a href="./contacto.html"><li class="footer__item">Contactenos</li></a>
+            <a href="./ayuda.html"><li class="footer__item">Ayuda</li></a>
+        </ul>
+        <aside class="footer__aside">
+            <div>
+                <p>Algunas monedas soportadas</p>
+                <img src="../assets/cryptocurrencies.png" alt="algunas monedas soportadas" height="130px" width="230px">
+            </div>
+        </aside>
+    </footer>
+    
+</body>

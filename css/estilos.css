@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    
+}
+
+/* Start - Index and main Section*/
+
+.header{
+    display: grid;
+    grid-template-areas: "nav nav encabezado";
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: midnightblue;
+    border: solid 1.5px navy;
+    position: sticky;
+    top: 0px;
+    z-index: 1; 
+}
+
+.header__list{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    justify-content: stretch;
+    grid-area: nav;
+}
+
+.header__item{
+    display: inline-block;
+    border-bottom: 2px solid navy;
+}
+
+.header__item a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.header__item:hover{
+   background-color: rgb(2, 2, 124);
+   border-bottom: 2px solid rgb(140, 164, 230);
+}
+
+.header__h1{
+    color: oldlace;
+    /*display: block;
+    position: absolute;
+    right: 10px;
+    top: 15%; */
+    grid-area: encabezado;
+}
+
+.main{
+    background-color: wheat;
+    padding: 10px;
+    position: relative;
+}
+
+.main__article{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "imagen informacion";
+    grid-column-gap: 10px;  
+}
+
+.main__img{
+/* position: relative; 
+    display: inline-block; */
+    grid-area: imagen;
+}
+
+.main__div{
+    /*
+    position: absolute;
+    display: inline;
+    padding: 10px;
+    color: black; */
+    grid-area: informacion;
+}
+
+.main__h2{
+    display: inline-block;
+}
+
+.main__p{
+    display: inline-block;
+}
+
+/* End - Index and main Section*/
+
+/* Start - Footer Section*/
+
+.footer{
+    /*position: relative;*/
+    background-color: midnightblue;
+    display: grid;
+    grid-template-areas: "encabezado encabezado encabezado"
+                         "links espacio monedas";
+    grid-template-columns: 1/3fr 1/3fr auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 5px;
+}
+
+
+.footer__list{
+    display: inline-block;
+    grid-area: links;
+}
+.footer__item{
+    color: oldlace;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    
+}
+
+
+.footer__section{
+    color: oldlace;
+    padding: 10px;
+    grid-area: encabezado;   
+}
+
+.footer__aside{
+    color:oldlace;
+    display: inline-block;
+    padding-right: 10px;
+    /*position: absolute;
+    right: 1%;
+    top: 20%;*/
+    grid-area: monedas;
+}
+
+/* End - Footer Section*/
+
+/* Start - Contact us Section*/
+
+.main__contenedor{
+    padding: 20px;
+    overflow: hidden;
+
+}
+
+.main__titulo{
+    font-size: 25px;
+    color: black;
+}
+
+/*
+.main__visual{
+   
+   display: inline-block;
+   position: relative;
+   left: 50%; 
+
+}*/
+
+/*
+.main__informacion{
+    
+    display: inline-block;
+    width: 30%;
+    position: absolute;
+    left: 50px; 
+    
+    
+} */
+
+/*
+.main__informacion--inv{
+    
+    display: inline-block;
+    width: 30%;
+    position: absolute;
+    right: 250px; 
+    
+} */
+
+/*
+.main__visual--inv{
+    
+    display: inline-block;
+    position: relative; 
+}*/
+
+hr {
+    border: 0.5px solid rgb(248, 164, 131);
+}
+
+
+.grilla__contacto{
+    display: grid;
+    grid-template-areas: 
+                         "info-comprar info-comprar info-comprar comprarPro comprarPro"
+                         "apoyarPro apoyarPro info-apoyar info-apoyar info-apoyar"
+                         "info-trabajar info-trabajar info-trabajar trabajarPro trabajarPro"
+                         "contacto contacto contacto contacto contacto";
+    grid-template-columns: 5fr 5fr 5fr 5fr 5fr;
+    grid-template-rows: 2.5fr 2.5fr 2.5fr auto;
+    grid-column-gap: 15px;
+    grid-row-gap:15px;
+}
+
+.info-comprar{
+    grid-area: info-comprar;
+}
+
+.info-apoyar{
+    grid-area: info-apoyar;
+}
+
+.info-trabajar{
+    grid-area: info-trabajar;
+}
+
+.comprarPro{
+    grid-area: comprarPro;
+}
+
+.apoyarPro{
+    grid-area: apoyarPro;
+}
+
+.trabajarPro{
+    grid-area: trabajarPro;
+}
+
+.div__contacto{
+    grid-area: contacto;
+    
+}
+
+.div__contacto ul{
+    list-style-type: none;
+}
+
+/* End - Contact us Section*/
+
+/* Start - Cards Section*/
+
+.main__article--tarjetas{
+    /* padding: 20px; */
+    grid-area: presentacion;
+}
+
+.main__form--tarjetas{
+    /*padding: 20px; */
+    grid-area: formulario;
+}
+
+.main__grilla--tarjetas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 2fr;
+    grid-template-areas: "presentacion" "formulario";
+}
+
+.boton__form--tarjetas{
+    grid-area: enviar;
+}
+
+/* End - Cards Section*/
+
+/* Start - Services Section*/
+
+.grilla__servicios{
+    display: grid;
+    grid-template-areas: "cabecera cabecera"
+                         "informacionUno videoUno"
+                         "informacionDos videoDos"
+                         "informacionTres videoTres" ;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: .5fr 2.5fr 2.5fr 2.5fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+
+.main__article--Servicios{
+    color: black;
+    padding: 10px 5px;
+    position: relative;
+    grid-area: cabecera;
+}
+
+
+.articuloUno{
+    grid-area: informacionUno;
+}
+.articuloDos{
+    grid-area: informacionDos;
+}
+.articuloTres{
+    grid-area: informacionTres;
+}
+
+.videoUno{
+    grid-area: videoUno;
+}
+
+.videoDos{
+    grid-area: videoDos;
+}
+
+.videoTres{
+    grid-area: videoTres;
+}
+
+/* End - Services Section*/
+
+/* Start - Help Section*/
+
+.ul__grid--ayuda{
+    display: grid;
+    grid-template-areas: "preguntaUno"
+                         "respuestaUno"
+                         "preguntaDos"
+                         "respuestaDos"
+                         "preguntaTres"
+                         "respuestaTres"
+                         "preguntaCuatro"
+                         "respuestaCuatro";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    justify-items: center;
+    list-style-type: upper-roman;
+}
+
+.main__item--h{
+    font-size: large;
+    font-weight: bold;
+}
+
+.preguntaUno{
+    grid-area: preguntaUno;
+}
+
+.respuestaUno{
+    grid-area: respuestaUno;
+}
+
+.respuestaDos{
+    grid-area: respuestaDos;
+}
+
+.respuestaTres{
+    grid-area: respuestaTres;
+}
+
+.respuestaCuatro{
+    grid-area: respuestaCuatro;
+}
+
+.preguntaDos{
+    grid-area: preguntaDos;
+}
+
+.preguntaTres{
+    grid-area: preguntaTres;
+}
+
+.preguntaCuatro{
+    grid-area: preguntaCuatro;
+}
+
+/* End - Help Section*/
