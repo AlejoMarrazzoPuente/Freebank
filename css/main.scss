@@ -1,0 +1,240 @@
+@import "../partials/reset";
+@import "../partials/cards";
+@import "../partials/funding";
+@import "../partials/services";
+@import "../partials/help";
+
+.header{
+    display: grid;
+    grid-template-areas: "nav nav encabezado";
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: midnightblue;
+    border: solid 1.5px navy;
+    position: sticky;
+    top: 0px;
+    z-index: 0; 
+    
+    &__list{
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        justify-content: stretch;
+        grid-area: nav;
+    }
+    
+    &__item{
+        display: inline-block;
+        border-bottom: 2px solid navy;
+        
+        a{
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+        }
+        
+        &:hover{
+           background-color: rgb(2, 2, 124);
+           border-bottom: 2px solid rgb(140, 164, 230);
+        }
+    }
+    
+    
+    &__h1{
+        color: oldlace;
+        /*display: block;
+        position: absolute;
+        right: 10px;
+        top: 15%; */
+        grid-area: encabezado;
+    }
+}
+
+.main{
+    background-color: snow;
+    /*padding: 10px;*/
+    position: relative;
+    
+    &__article{
+        position: relative;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "imagen informacion";
+        grid-column-gap: 10px;  
+    }
+    
+    &__img{
+    /* position: relative; 
+        display: inline-block; */
+        grid-area: imagen;
+    }
+    
+    &__div{
+        /*
+        position: absolute;
+        display: inline;
+        padding: 10px;
+        color: black; */
+        grid-area: informacion;
+    }
+    
+    &__h2{
+        display: inline-block;
+    }
+    
+    &__p{
+        display: inline-block;
+    }
+    
+    /* End - Index and main Section*/
+    
+    /* Start - Contact us Section*/
+    
+    &__contenedor{
+        padding: 20px;
+        overflow: hidden;
+    
+    }
+    
+    &__titulo{
+        font-size: 25px;
+        color: black;
+    }
+    
+    /*
+    .main__visual{
+       
+       display: inline-block;
+       position: relative;
+       left: 50%; 
+    
+    }*/
+    
+    /*
+    .main__informacion{
+        
+        display: inline-block;
+        width: 30%;
+        position: absolute;
+        left: 50px; 
+        
+        
+    } */
+    
+    /*
+    .main__informacion--inv{
+        
+        display: inline-block;
+        width: 30%;
+        position: absolute;
+        right: 250px; 
+        
+    } */
+    
+    /*
+    .main__visual--inv{
+        
+        display: inline-block;
+        position: relative; 
+    }*/
+}
+
+/* Start - Footer Section*/
+    
+.footer{
+    /*position: relative;*/
+    background-color: midnightblue;
+    display: grid;
+    grid-template-areas: "encabezado encabezado encabezado"
+                         "links espacio monedas";
+    grid-template-columns: 1/3fr 1/3fr auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 5px;
+    
+    &__list{
+        display: inline-block;
+        grid-area: links;
+    }
+    &__item{
+        list-style: none;
+        color: oldlace;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        
+    }
+ 
+    &__section{
+        color: oldlace;
+        padding: 10px;
+        grid-area: encabezado;   
+    }
+    
+    &__aside{
+        color:oldlace;
+        display: inline-block;
+        padding-right: 10px;
+        /*position: absolute;
+        right: 1%;
+        top: 20%;*/
+        grid-area: monedas;
+    }
+}
+
+
+
+hr {
+    border: 0.5px solid rgb(248, 164, 131);
+}
+
+
+.grilla__contacto{
+    display: grid;
+    grid-template-areas: 
+                         "info-comprar info-comprar info-comprar comprarPro comprarPro"
+                         "apoyarPro apoyarPro info-apoyar info-apoyar info-apoyar"
+                         "info-trabajar info-trabajar info-trabajar trabajarPro trabajarPro"
+                         "contacto contacto contacto contacto contacto";
+    grid-template-columns: 5fr 5fr 5fr 5fr 5fr;
+    grid-template-rows: 2.5fr 2.5fr 2.5fr auto;
+    grid-column-gap: 15px;
+    grid-row-gap:15px;
+}
+
+.info-comprar{
+    grid-area: info-comprar;
+}
+
+.info-apoyar{
+    grid-area: info-apoyar;
+}
+
+.info-trabajar{
+    grid-area: info-trabajar;
+}
+
+.comprarPro{
+    grid-area: comprarPro;
+}
+
+.apoyarPro{
+    grid-area: apoyarPro;
+}
+
+.trabajarPro{
+    grid-area: trabajarPro;
+}
+
+.div__contacto{
+    grid-area: contacto;
+    
+}
+
+.div__contacto ul{
+    list-style-type: none;
+}
+
+/* End - Contact us Section*/

@@ -18,7 +18,7 @@
     border: solid 1.5px navy;
     position: sticky;
     top: 0px;
-    z-index: 1; 
+    z-index: 0; 
 }
 
 .header__list{
@@ -56,8 +56,8 @@
 }
 
 .main{
-    background-color: rgb(255, 237, 204);
-    padding: 10px;
+    background-color: snow;
+    /*padding: 10px;*/
     position: relative;
 }
 
@@ -114,6 +114,7 @@
     grid-area: links;
 }
 .footer__item{
+    list-style: none;
     color: oldlace;
     padding-left: 30px;
     padding-bottom: 10px;
@@ -371,3 +372,20 @@ hr {
 }
 
 /* End - Help Section*/
+
+.servicio{
+    border: 1px solid;
+    text-align: center;
+    box-shadow: 3px 3px gray;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contenido{
+
+
+}
+
+.boton--contenido{
+
+}

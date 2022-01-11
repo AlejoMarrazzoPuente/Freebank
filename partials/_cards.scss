@@ -1,0 +1,25 @@
+
+/* Start - Cards Section*/
+
+.main__article--tarjetas{
+    /* padding: 20px; */
+    grid-area: presentacion;
+}
+
+.main__form--tarjetas{
+    /*padding: 20px; */
+    grid-area: formulario;
+}
+
+.main__grilla--tarjetas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 2fr;
+    grid-template-areas: "presentacion" "formulario";
+}
+
+.boton__form--tarjetas{
+    grid-area: enviar;
+}
+
+/* End - Cards Section*/
