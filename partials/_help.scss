@@ -1,0 +1,58 @@
+/* Start - Help Section*/
+
+.ul__grid--ayuda{
+    display: grid;
+    grid-template-areas: "preguntaUno"
+                         "respuestaUno"
+                         "preguntaDos"
+                         "respuestaDos"
+                         "preguntaTres"
+                         "respuestaTres"
+                         "preguntaCuatro"
+                         "respuestaCuatro";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    justify-items: center;
+    list-style-type: upper-roman;
+}
+
+.main__item--h{
+    font-size: large;
+    font-weight: bold;
+}
+
+.preguntaUno{
+    grid-area: preguntaUno;
+}
+
+.respuestaUno{
+    grid-area: respuestaUno;
+}
+
+.respuestaDos{
+    grid-area: respuestaDos;
+}
+
+.respuestaTres{
+    grid-area: respuestaTres;
+}
+
+.respuestaCuatro{
+    grid-area: respuestaCuatro;
+}
+
+.preguntaDos{
+    grid-area: preguntaDos;
+}
+
+.preguntaTres{
+    grid-area: preguntaTres;
+}
+
+.preguntaCuatro{
+    grid-area: preguntaCuatro;
+}
+
+/* End - Help Section*/

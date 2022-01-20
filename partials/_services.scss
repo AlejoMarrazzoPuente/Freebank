@@ -1,0 +1,53 @@
+/* Start - Services Section*/
+
+.grilla__servicios{
+    display: grid;
+    grid-template-areas: "cabecera cabecera"
+                         "informacionUno videoUno"
+                         "informacionDos videoDos"
+                         "informacionTres videoTres" ;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: .5fr 2.5fr 2.5fr 2.5fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+
+.main__article--Servicios{
+    color: #000000;
+    padding: 10px 5px;
+    position: relative;
+    grid-area: cabecera;
+}
+
+
+.articuloUno{
+    grid-area: informacionUno;
+}
+.articuloDos{
+    grid-area: informacionDos;
+}
+.articuloTres{
+    grid-area: informacionTres;
+}
+
+.videoUno{
+    grid-area: videoUno;
+}
+
+.videoDos{
+    grid-area: videoDos;
+}
+
+.videoTres{
+    grid-area: videoTres;
+}
+
+.servicio{
+    border: 1px solid;
+    text-align: center;
+    box-shadow: 3px 3px #808080;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* End - Services Section*/

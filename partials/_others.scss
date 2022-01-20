@@ -1,0 +1,31 @@
+$colors:(
+    jean: #191970,
+    darkerblue: #02027c,
+    lightblue: #8ca4e6,
+    gray: #808080,
+    black: #000000,
+    white: #ffffff,
+    oldlace: #fffafa,
+    blood: #b60707,
+    yolk: #fcff32
+);
+
+.ventana{
+    background-color: map-get($colors, lightblue);
+    height: 250px;
+    width: 300px;
+    border-radius: 40px;
+    box-shadow: 12px 12px 2px 1px map-get($colors, gray);
+}
+
+.sangre{
+    @extend .ventana;
+    background-color: map-get($colors, blood);
+    box-shadow: 12px 12px 2px 1px rgb(107, 43, 43);
+}
+
+.amarillo{
+    @extend .ventana;
+    background-color: map-get($colors, yolk);
+    box-shadow: 12px 12px 2px 1px rgb(196, 194, 99);
+}
