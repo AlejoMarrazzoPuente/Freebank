@@ -49,7 +49,7 @@
 }
 
 .main__article--Servicios {
-  color: black;
+  color: #000000;
   padding: 10px 5px;
   position: relative;
   -ms-grid-row: 1;
@@ -97,8 +97,8 @@
 .servicio {
   border: 1px solid;
   text-align: center;
-  -webkit-box-shadow: 3px 3px gray;
-          box-shadow: 3px 3px gray;
+  -webkit-box-shadow: 3px 3px #808080;
+          box-shadow: 3px 3px #808080;
   height: auto;
   border-radius: 10px;
 }
@@ -173,6 +173,27 @@
 }
 
 /* End - Help Section*/
+.ventana, .sangre, .amarillo {
+  background-color: #8ca4e6;
+  height: 250px;
+  width: 300px;
+  border-radius: 40px;
+  -webkit-box-shadow: 12px 12px 2px 1px #808080;
+          box-shadow: 12px 12px 2px 1px #808080;
+}
+
+.sangre {
+  background-color: #b60707;
+  -webkit-box-shadow: 12px 12px 2px 1px #6b2b2b;
+          box-shadow: 12px 12px 2px 1px #6b2b2b;
+}
+
+.amarillo {
+  background-color: #fcff32;
+  -webkit-box-shadow: 12px 12px 2px 1px #c4c263;
+          box-shadow: 12px 12px 2px 1px #c4c263;
+}
+
 .header {
   display: -ms-grid;
   display: grid;
@@ -185,8 +206,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: midnightblue;
-  border: solid 1.5px navy;
+  background-color: #191970;
+  border: solid 1.5px #02027c;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -210,13 +231,13 @@
 
 .header__item {
   display: inline-block;
-  border-bottom: 2px solid navy;
+  border-bottom: 2px solid #02027c;
 }
 
 .header__item a {
   display: block;
   padding: 15px;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -226,7 +247,7 @@
 }
 
 .header__h1 {
-  color: oldlace;
+  color: #fdf5e6;
   /*display: block;
         position: absolute;
         right: 10px;
@@ -238,7 +259,7 @@
 }
 
 .main {
-  background-color: snow;
+  background-color: #fffafa;
   /*padding: 10px;*/
   position: relative;
   /* End - Index and main Section*/

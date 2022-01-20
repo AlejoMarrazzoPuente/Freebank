@@ -3,6 +3,7 @@
 @import "../partials/funding";
 @import "../partials/services";
 @import "../partials/help";
+@import "../partials/others";
 
 .header{
     display: grid;
@@ -11,8 +12,8 @@
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
-    background-color: midnightblue;
-    border: solid 1.5px navy;
+    background-color: map-get($colors, jean);
+    border: solid 1.5px map-get($colors, darkerblue);
     position: sticky;
     top: 0px;
     z-index: 0; 
@@ -27,24 +28,24 @@
     
     &__item{
         display: inline-block;
-        border-bottom: 2px solid navy;
+        border-bottom: 2px solid map-get($colors, darkerblue);
         
         a{
             display: block;
             padding: 15px;
-            color: white;
+            color: #ffffff;
             text-decoration: none;
         }
         
         &:hover{
-           background-color: rgb(2, 2, 124);
-           border-bottom: 2px solid rgb(140, 164, 230);
+           background-color: map-get($colors, darkerblue);
+           border-bottom: 2px solid map-get($colors, lightblue);
         }
     }
     
     
     &__h1{
-        color: oldlace;
+        color: #fdf5e6;
         /*display: block;
         position: absolute;
         right: 10px;
@@ -54,7 +55,7 @@
 }
 
 .main{
-    background-color: snow;
+    background-color: #fffafa;
     /*padding: 10px;*/
     position: relative;
     
