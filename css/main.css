@@ -194,6 +194,11 @@
           box-shadow: 12px 12px 2px 1px #c4c263;
 }
 
+.separador {
+  background-color: #641d72d8;
+  color: white;
+}
+
 .header {
   display: -ms-grid;
   display: grid;
@@ -259,7 +264,7 @@
 }
 
 .main {
-  background-color: #fffafa;
+  background-color: white;
   /*padding: 10px;*/
   position: relative;
   /* End - Index and main Section*/

@@ -11,8 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: midnightblue">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #641D72">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">FreeBank</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,20 +41,26 @@
         </nav>
     </header>
     <main class="main">
-        <div class="container">
-            <div class="row">
-                <div>
-                    <article>
-                        <h3>
-                            Saca tu tarjeta! ¿Nuestras politicas?:
-                        </h3>
-                        <p>
-                            La idea es que seas capaz de guardar tus criptomonedas y tokens sin un sistema KYC (Known Your Costumer), esto quiere decir que no importa de que parte del mundo seas! No nos importa ninguno de tus datos ya que no creemos en la centralizacion y mucho menos en la regularizacion. Los unicos datos que te pediremos seran para ponernos en contacto contigo y que podamos brindarte tu tarjeta FreeBank lo mas rapido posible.
-                        </p>
-                    </article>
+        <div class="container-fluid">
+            <div class="row justify-content-center pt-2">
+                <div class="col-auto">
+                    <h3>
+                        Saca tu tarjeta! ¿Nuestras politicas?
+                    </h3>
+                </div>
+                
+            </div>
+            <div class="row p-4">
+                <div class="col-md-3">
+                    <img src="../assets/credit_card.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-9 d-flex align-items-center">
+                    <p>
+                        La idea es que seas capaz de guardar tus criptomonedas y tokens sin un sistema KYC (Known Your Costumer), esto quiere decir que no importa de que parte del mundo seas! No nos importa ninguno de tus datos ya que no creemos en la centralizacion y mucho menos en la regularizacion. Los unicos datos que te pediremos seran para ponernos en contacto contigo y que podamos brindarte tu tarjeta FreeBank lo mas rapido posible.
+                    </p>
                 </div>
             </div>
-            <form class="container ml-2 mt-2" action="" method="POST">
+            <form class="container-fluid ml-2 mt-2" action="" method="POST">
                 <div class="row g-3 align-items-center mb-3">    
                     <div class="col-md-2" style="text-align: center;">
                         <label for="inputNombre" class="col-form-label">Nombre Completo</label>
@@ -62,14 +68,12 @@
                     <div class="col-md-3">
                         <input type="text" id="inputNombre" class="form-control" aria-describedby="textHelpInline">
                     </div>
-                <div class="row g-3 align-items-center mb-3"> 
                     <div class="col-md-2" style="text-align: center;">
                         <label for="inputDireccion" class="col-form-label">Direccion</label>
                     </div>
                     <div class="col-md-3">
                         <input type="text" id="inputDireccion" class="form-control" aria-describedby="textHelpInline">
                     </div>
-                </div>
                 <div class="row g-3 align-items-center mb-3"> 
                     <div class="col-md-2" style="text-align: center;">
                         <label for="inputEmail" class="col-form-label">Email</label>
@@ -77,21 +81,28 @@
                     <div class="col-md-3">
                         <input type="email" id="inputEmail" class="form-control" aria-describedby="textHelpInline">
                     </div>
-                </div>
-                <div class="row g-3 align-items-center mb-3">
                     <div class="col-md-2" style="text-align: center;">
                         <label for="inputMobile" class="col-form-label">Telefono</label>
                     </div>
                     <div class="col-md-3">
                     <input type="number" id="inputMobile" class="form-control" aria-describedby="textHelpInline">
                     </div>
-                    <div class="col-md-7"> Genero
+                </div>
+                <div class="row g-3 align-items-center mb-3">
+                    <div class="col-md-2"> 
+                        <p style="text-align: center;">
+                            Genero
+                        </p>
+                    </div>
+                    <div class="col-md-3">
                         <select name="Genero">
                             <option value="M">Hombre</option>
                             <option value="F">Mujer</option>
                             <option value="O">Otro</option>
                             <option value="DS">Prefiero no decirlo</option>
                         </select>
+                    </div> 
+                        
                     </div>
                 </div>
                 <div class="row g-3 align-items-center mb-3">
@@ -111,25 +122,14 @@
             </form>
         </div>
     </main>
-    <footer class="footer">
-        <section class="footer__section">
-            <article>
-                <p>FreeBank no se encuentra regularizada por ninguna entidad, es un proyecto completamente open-source y la wallet es 100% cold y 100% hot! Para mas informacion no te olvides de contactarnos</p>
-            </article>
-        </section>
-        <ul class="footer__list">
-            <a href="../index.html"><li class="footer__item">Inicio</li></a>
-            <a href="#"><li class="footer__item">Tarjetas</li></a>
-            <a href="./servicios.html"><li class="footer__item">Servicios</li></a>
-            <a href="./contacto.html"><li class="footer__item">Contactenos</li></a>
-            <a href="./ayuda.html"><li class="footer__item">Ayuda</li></a>
-        </ul>
-        <aside class="footer__aside">
-            <div>
-                <p>Algunas monedas soportadas</p>
-                <img src="../assets/cryptocurrencies.png" alt="algunas monedas soportadas" height="130px" width="230px">
+    <footer class="separador">
+        <div class="container">
+            <div class="row pt-2">
+                <p class="text-white">
+                    FreeBank no se encuentra regularizada por ninguna entidad, es un proyecto completamente open-source y la wallet es 100% cold y 100% hot! Para mas informacion no te olvides de contactarnos
+                </p>
             </div>
-        </aside>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
